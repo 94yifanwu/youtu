@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script type="text/javascript" src="faker.js" ></script>
+</head>
+
+<body>
+    <div class="text-center">
+        <h1>My Awesome app 🔥</h1>
+        <br>
+        <section id="whenSignedIn">
+            <button id="signInButton" class="btn btn-primary">Sign in with Google</button>
+        </section>
+        <br>
+        <section id="whenSignedOut" hidden="true">
+            <div id="userDetails"></div>
+            <button id="signOutButton" class="btn btn-primary" >Sign Out</button>
+        </section>
+        <br>
+        <section id="createButton" hidden="true">
+            <ul id="thingsList">
+
+            </ul>
+            <button id="createThing" class="btn btn-primary">Create Random Things</button>
+        </section>
+    </div>
+    
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+    <script type="text/javascript" src="firebaseinit.js" defer></script>
+    <script type="text/javascript" src="app.js" defer></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+</body>
+</html>
